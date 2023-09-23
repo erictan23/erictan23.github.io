@@ -1,0 +1,243 @@
+<!DOCTYPE>
+<html lang = 'en'>
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/102116503d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id = "header">
+        <div class ="container">
+            <nav>
+                <img src = "Assets/Image/mudkip.png" alt = "Logo" class = "logo">
+                <ul id = "sidemenu">
+                    <li><a href = "#header">Home</a></li>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#services">Services</a></li>
+                    <li><a href = "#portfolio">Portfolio</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class ="header-text">
+                <p>Data Scientist</p>
+                <h1>Hi, I'm Eric From Singapore</h1>
+            </div>
+        </div>
+    </div>
+<!-- ---------------------------------about---------------------------- -->
+    <div id ="about">
+        <div class = "container">
+            <div class = "row">
+                <div class = "about-col-1">
+                    <img src = "Assets/Image/profile-pic.svg" alt =User Image >
+                </div>
+                <div class = "about-col-2">
+                    <h1 class = "sub-title">About Me</h1>
+                    <p>Hello! My name is Eric and I am an aspiring Data Scientist. I study in Nanyang Technological University and majored in Computer Science. 
+                    I was previously a Biomedical Student in Singapore Polytechnic specialised in Medical Technology and
+                    I was very intrigued by the technology behind the laboratory and I decided to take the leap of faith 
+                    and pursue a degree in Computer Science at NTU to better understand how automations were possible. 
+                    
+                    <br>
+                    <br>I found my passion in Data Science when I was in my third year, taking up my specilisation course in Data Analytics and Data Mining. 
+                    From the module, I enjoyed my time studying the different strategies of data pre-processing, machine learning and analytical process of data through my professors and self-learning. 
+                    Data are everywhere and understanding it and utilising it is very important in both research and business which makes it such as important aspect
+                    of the world.</p>
+                
+                    <div class = "tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class = "tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>Data Preparation</span><br>Data Preprocessing Techniques</Data></li>
+                            <li><span>Data Analytics</span><br>Data Visualisation Tools</li>
+                            <li><span>Machine Learning</span><br>Developing Machine Learning Models</li>
+                            <li><span>Languages</span><ul class = "skills-list"><li>Python <i class="fa-brands fa-python"></i></li><li>Java <i class="fa-brands fa-java"></i> </li><li>Javascript<i class="fa-brands fa-js"></i> </li></ul></li>
+                            <li><span>Tools</span><ul class = "skills-list"><li>Scikit-learn</li><li>Tensorflow</li><li>Matplotlib </li><li>XGBoost</li><li>Git</li></ul></li>
+                        </ul>
+
+                    </div>
+
+                    <div class = "tab-contents" id = "experience">
+                        <ul>
+                            <li><span>2022</span><br>Infrastructure Internship at DFS Pte Ltd</li>
+                            <li><span>2018</span><br>Medical Technologist Internship at Parkway Laboratory</li>
+                        </ul>
+
+                    </div>
+
+                    <div class = "tab-contents" id ="education">
+                        <ul>
+                            <li><span>2022</span><br>Bachelor of Engineering in Computer Science</li>
+                            <li><span>2018</span><br>Diploma in Biomedical Science with Merit</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ---------------------------------services------------------------ -->
+
+<div id = 'services'>
+    <div class ='container'>
+        <h1 class = 'sub-title'>My Services</h1>
+        <div class ='services-list'>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Data Cleaning</h2>
+                <p>Perform meticulous data cleaning through initial data exploratory. Understanding the data problem statement and initiate pre-processing techniques of collected data. Some examples of data cleaned are texts, numerical data, categorical data. </p>
+                
+            </div>
+
+            <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Data Analytics</h2>
+                <p>Explore the dataset to identify relationships between features and target variable. Through visualisation and analytics, identify features and solutions for the prediction of the target variable.</p>
+                
+            </div>
+
+            <div>
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Machine Learning</h2>
+                <p>Experience in employing machine learning and deep learning models for regression and categorical problems such linear regression, decision tree, random forest, XGBoost, Multilayer Perceptron Neural Networks, Tensorflow, and XGBoost.</p>
+                
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------------------portfolio------------------------ -->
+<div id = "portfolio">
+    <div class = "container">
+        <h1 class = "sub-title">My Work</h1>
+        <div class = "work-list">
+            <div class = "work">
+                <img src ="Assets/Image/movie-background-collage.jpg" alt = "movie"> 
+                <div class = "layer">
+                    <h3>Movie Recommendation System</h3>
+                    <p>Feeling lost? Take a look at our movie recommendation system that would suggest you some movies that you can look forward to watch. <br>Check it out now on GitHub!</p>
+                    <a href = "https://github.com/erictan23/RecommenderSystem" target = "_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class = "work">
+                <img src ="Assets/Image/stock.jpg" alt = "currency"> 
+                <div class = "layer">
+                    <h3>Currency Prediction Model</h3>
+                    <p>Have you wonder how well is our currency doing? Ever wonder what is the strongest currency in the world and how it affects other currencies?<br>For more information check it out on GitHub!</p>
+                    <a href = "https://github.com/erictan23/Currency-Prediction" target = "_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class = "work">
+                <img src ="Assets/Image/tweets.jpg" alt = "tweets"> 
+                <div class = "layer">
+                    <h3>Twitter Tweet Analysis</h3>
+                    <p>Ever wonder how our social media affects stock prices? This project analyse the objectivity and subjectivity of stock tweets to identify if they are positive or negative tweets which may affect the stock price prediction.<br>Check it out now on GitHub!</p>
+                    <a href = "https://github.com/erictan23/TwitterIR" target = "_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class = "btn">See More</a>
+    </div>
+</div>
+
+<!-- ---------------------------------contact------------------------ -->
+
+<div id = "contact">
+    <div class = "container">
+        <div class = "row">
+            <div class = "contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@ericcc23july@hotmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/tan-jiawei-eric/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href = "https://github.com/erictan23"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href ="Assets/Image/resume_2023.pdf" download class = "btn btn2">Download CV</a>
+            </div>
+            <div class = "contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type = "text" name = "Name" placeholder = "Your Name" required>
+                    <input type = "email" name = "Email" placeholder="Your Email" required>
+                    <textarea name ="Message" row = "10" placeholder ="Your Message"></textarea>
+                    <button type = "submit" class = "btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class = "copyright">
+        <p>Copyright © Eric Tan <i class="fa-solid fa-fire"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName('tab-contents')
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    } 
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById('sidemenu');
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwT4wv3Hm9-o99QfrbsVvnqhfn8qcfKLrcIxniy77pQ9E-lm-kg128bjP0ivJRAeMM1/exec'
+    const form = document.forms['submit-to-google-sheet']
+    
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => 
+        {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+                msg.innerHTML = "";
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => {
+            msg.innerHTML = "Message Unsucessful"
+            setTimeout(function() {
+                msg.innerHTML = "";
+            }, 5000)
+        })
+    })
+</script>
+
+</body>
+</html> 
